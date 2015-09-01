@@ -1,2 +1,4 @@
 rootProject.name = 'crontab'
+include 'config'
+include 'cron'
 
