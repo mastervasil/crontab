@@ -31,5 +31,7 @@ dependencies {
 
     compile "org.quartz-scheduler:quartz:$quartzVersion"
 
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+
 }

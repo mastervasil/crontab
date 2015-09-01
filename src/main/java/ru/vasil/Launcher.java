@@ -4,7 +4,8 @@ import com.google.common.base.Throwables;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.vasil.quartz.QuartzConfigation;
+import ru.vasil.config.PropertyPlaceholderConfig;
+import ru.vasil.config.QuartzConfigation;
 
 /**
  * vasil: 30.08.15
