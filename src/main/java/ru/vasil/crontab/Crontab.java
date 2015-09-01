@@ -58,7 +58,7 @@ public class Crontab {
         toStop.removeAll(usedLines);
         for (String line : toStop) {
             log.info("Stopping disappeared command {}", line);
-            Task task = map.get(line);
+            Task task = map.remove(line);
             scheduler.deleteJob(task.job.getKey());
         }
 

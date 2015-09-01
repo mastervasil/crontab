@@ -17,7 +17,7 @@ public class QuartzConfigation {
     @Value("${crontab.file.name:main.crontab}")
     public String crontabFileName;
 
-    @Value("${crontab.refresh.period.seconds:10}")
+    @Value("${crontab.refresh.period.seconds:60}")
     public long refreshPeriodSeconds;
 
     @Bean(initMethod = "start", destroyMethod = "shutdown")

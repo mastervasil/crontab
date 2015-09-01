@@ -50,5 +50,9 @@ public class CrontabTest {
         verify(scheduler, times(1)).deleteJob(Matchers.<JobKey>any());
         verify(scheduler, times(3)).scheduleJob(Matchers.<JobDetail>any(), Matchers.<Trigger>any());
 
+        c.refresh(tempFile);
+        verify(scheduler, times(1)).deleteJob(Matchers.<JobKey>any());
+        verify(scheduler, times(3)).scheduleJob(Matchers.<JobDetail>any(), Matchers.<Trigger>any());
+
     }
 }
